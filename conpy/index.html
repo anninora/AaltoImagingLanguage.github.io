@@ -35,7 +35,7 @@
                     <a href="https://users.aalto.fi/~vanvlm1/conpy/">Documentation</a>
                 </li>
                 <li>
-                    <a href="contact.html">More information </a>
+                    <a href="contact.html">Contact information </a>
                 </li>
                  <li>
                     <a href="../index.html">Back to project menu</a>
@@ -47,10 +47,12 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <h1><b>Analysis of Functional Connectivity and Oscillatory Power Using DICS.</b><br /></h1>
-		<p>Authors: van Vliet M, Liljeström M, Aro S, Salmelin R, Kujala J.</p>
-                <p>You can access all online material from the Menu. <br> </p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a>
+                <h1>Analysis of Functional Connectivity and Oscillatory Power Using DICS.<br /></h1>
+		<p><b>Authors:</b> van Vliet M, Liljeström M, Aro S, Salmelin R, Kujala J. <br></p>
+                <p><b>Abstract:</b> Communication between brain regions is thought to be facilitated by the synchronization of oscillatory activity. Hence, large-scale functional networks within the brain may be estimated by measuring synchronicity between regions. Neurophysiological recordings, such as magnetoencephalography (MEG) and electroencephalography (EEG), provide a direct measure of oscillatory neural activity with millisecond temporal resolution. In this paper, we describe a full data analysis pipeline for functional connectivity analysis based on dynamic imaging of coherent sources (DICS) of MEG data. DICS is a beamforming technique in the frequency-domain that enables the study of the cortical sources of oscillatory activity and synchronization between brain regions. All the analysis steps, starting from the raw MEG data up to publication-ready group-level statistics and visualization, are discussed in depth, including methodological considerations, rules of thumb and tradeoffs. We start by computing cross-spectral density (CSD) matrices using a wavelet approach in several frequency bands (alpha, theta, beta, gamma). We then provide a way to create comparable source spaces across subjects and discuss the cortical mapping of spectral power. For connectivity analysis, we present a canonical computation of coherence that facilitates a stable estimation of all-to-all connectivity. Finally, we use group-level statistics to limit the network to cortical regions for which significant differences between experimental conditions are detected and produce vertex- and parcel-level visualizations of the different brain networks. Code examples using the MNE-Python package are provided at each step, guiding the reader through a complete analysis of the freely available openfMRI ds000117 “familiar vs. unfamiliar vs. scrambled faces” dataset. The goal is to educate both novice and experienced data analysts with the “tricks of the trade” necessary to successfully perform this type of analysis on their own data. <br><br></p>
+
+	<p> <br> The full publication can be found here <a href="https://www.frontiersin.org/articles/10.3389/fnins.2018.00586/full"> here </a>. <br> </p>
+<!--                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a> -->
 
                 <img src="../connectivity.png" alt="Connectivity" width="1500" class ="center">
             </div>
