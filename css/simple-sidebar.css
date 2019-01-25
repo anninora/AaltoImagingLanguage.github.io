@@ -16,7 +16,7 @@ body {
 }
 
 #wrapper {
-  padding-left: 0;
+  padding-left: 250px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -31,7 +31,7 @@ body {
   z-index: 1000;
   position: fixed;
   left: 250px;
-  width: 0;
+  width: 250px;
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
@@ -54,7 +54,7 @@ body {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -250px;
+  margin-right: 250px;
 }
 
 
@@ -107,13 +107,13 @@ body {
 
 @media(min-width:768px) {
   #wrapper {
-    padding-left: 0;
+    padding-left: 250px;
   }
   #wrapper.toggled {
     padding-left: 250px;
   }
   #sidebar-wrapper {
-    width: 0;
+    width: 250;
   }
   #wrapper.toggled #sidebar-wrapper {
     width: 250px;
