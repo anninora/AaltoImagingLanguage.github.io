@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Post-hoc Modification</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+       <div id="sidebar-wrapper"> 
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="https://users.aalto.fi/~vanvlm1/posthoc/regression.html">Interactive figure 1</a>
+                </li>
+                <li>
+                    <a href="https://users.aalto.fi/~vanvlm1/posthoc/preprocessing">Preprocessing reports</a>
+                </li>
+                <li>
+                    <a href="https://users.aalto.fi/~vanvlm1/posthoc/python">Python package</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact information</a>
+                </li>
+                 <li>
+                    <a href="../index.html">Back to project menu</a>
+                </li>
+           </ul>
+        </div> 
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>Post-hoc modification of linear models: combining machine learning with domain information to make solid inferences from noisy data</h1>
+                <p><b>Authors:</b> van Vliet M., Salmelin R.</p>
+                <p><b>Abstract:</b>
+                Linear machine learning models are a powerful tool that can “learn” a data transformation by being exposed to examples of input with the desired output, forming the basis for a variety of powerful techniques for analyzing neuroimaging data.
+                However, their ability to learn the desired transformation is limited by the quality and size of the example dataset, which in neuroimaging studies is often notoriously noisy and small.
+                In these cases, it is desirable to fine-tune the learned linear model using domain information beyond the example dataset.
+                To this end, we present a framework that decomposes the weight matrix of a fitted linear model into three subcomponents: the data covariance, the identified signal of interest, and a normalizer.
+                Inspecting these subcomponents in isolation provides an intuitive way to inspect the inner workings of the model and assess its strengths and weaknesses.
+                Furthermore, the three subcomponents may be altered, which provides a straightforward way to inject prior information and impose additional constraints.
+                We refer to this process as “post-hoc modification” of a model and demonstrate how it can be used to achieve precise control over which aspects of the model are fitted to the data through machine learning and which are determined through domain knowledge.
+                As an example use case, we decode the associative strength between words from EEG reading data.
+                Our results show how the decoding accuracy of two example linear models (ridge regression and logistic regression) can be boosted by incorporating information about the spatio-temporal nature of the data, domain knowledge about the N400 evoked potential and data from other participants.
+                </p>
+
+                <p>The preprint of the study can be found on <a href="https://biorxiv.org/content/early/2019/01/11/518662">BioRXiv</a>. The study is currently under peer review.</p>
+
+                <p><img src="posthoc.png" alt="Post-hoc modification"></p>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
+
